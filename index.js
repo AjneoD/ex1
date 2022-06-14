@@ -20,16 +20,22 @@ function resolveAfter2Seconds() {
 
 }
 
-async function asyncCall() {
+async function asyncCall()
 
-    console.log(details);
+    console.log(details);{
+
+    try {
 
     const result = await resolveAfter2Seconds();
 
     console.log(result);
+    }
 
+    catch(err){
+        console.log("there is an error");
+        console.log(err);
 }
-
+    }
 asyncCall();
   
 
